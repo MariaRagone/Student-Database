@@ -1,0 +1,15 @@
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\bin\Debug\net6.0\Lab 005 Student Database.exe
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\bin\Debug\net6.0\Lab 005 Student Database.deps.json
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\bin\Debug\net6.0\Lab 005 Student Database.runtimeconfig.json
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\bin\Debug\net6.0\Lab 005 Student Database.dll
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\bin\Debug\net6.0\Lab 005 Student Database.pdb
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.csproj.AssemblyReference.cache
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.AssemblyInfoInputs.cache
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.AssemblyInfo.cs
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.csproj.CoreCompileInputs.cache
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.dll
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\refint\Lab 005 Student Database.dll
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.pdb
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\Lab 005 Student Database.genruntimeconfig.cache
+C:\Users\maria\source\repos\Lab 005 Student Database\Lab 005 Student Database\obj\Debug\net6.0\ref\Lab 005 Student Database.dll
