@@ -1,4 +1,8 @@
-﻿//arrays
+﻿using System.Transactions;
+
+Console.WriteLine("Welcome to the Student Database.");
+Console.WriteLine();
+//ARRAYS 
 string[] names = 
 { 
     "Justin Jones", 
@@ -42,44 +46,73 @@ string[] foods =
     "Lasagna" 
 };
 
+//VARIABLES
 bool search = true;
-
 int choice = 0;
+//provide an option to see a list of all the students    
+//only show the list of names once at the beginning to avoid repetition
 while (search)
-{
+{ 
     while (true)
+{
+    Console.WriteLine("Do you want so search by name or number?");
+    string nameOrNumber = (Console.ReadLine().Trim().ToLower());
+    if (nameOrNumber == "name")
     {
-        Console.WriteLine($"Do you want to see a list of all the students? y/n");
-        string nameList = (Console.ReadLine());
-        if (nameList == "y")
-        {
-            for (int i = 0; i < names.Length; i++)
-            {
-                Console.WriteLine($"{i}. {names[i]}");
-            }
-            //foreach (string n in names)
-            //Console.WriteLine(n);
-            //break;
-            break;
-        }
+        Console.WriteLine("Enter a name to search.");
+        string searchName = (Console.ReadLine().Trim().ToLower());
+        int index = Array.IndexOf(names, searchName);
 
+        if (index >= 0)
+        {
+            Console.WriteLine($"{searchName} found at index {index}");
+        }
         else
         {
-            break;
+            Console.WriteLine($"{searchName} not found in the array");
         }
 
     }
+    else
+    {
+        break;
+    }
+}
+while (true)
+{
+    Console.WriteLine($"Do you want to see a list of all the students? y/n");
+    string nameList = (Console.ReadLine());
+    if (nameList == "y")
+    {
+        for (int i = 0; i < names.Length; i++)
+        {
+            Console.WriteLine($"{i}. {names[i]}");
+        }
+        search = true;
+        break;
+
+    }
+    else if (nameList == "n")
+    {
+        break;
+    }
+    else
+    {
+        Console.WriteLine("That is not a valid entry.");
+    }
+}
+//search for the student
+
+    
     while (true)
     {
         Console.WriteLine($"Enter a student number: 0 - {names.Length - 1}");
         choice = int.Parse(Console.ReadLine());
-        if (choice >= 0 && choice <= names.Length - 1)
+        if (choice >= 0 && choice <= names.Length - 1) //make sure the user inputs a valid entry
         {
             Console.WriteLine(names[choice]);
-            
             break;
         }
-
         else
         {
             Console.WriteLine("That is not a valid entry.");
@@ -106,14 +139,14 @@ while (search)
             continue;
         }
     }
-    //ask to continue
+    //ask to continue viewing another student
     while (true)
     {
         Console.WriteLine($"Would you like to learn about another student? y/n");
         string answer = Console.ReadLine().ToLower().Trim();
         if (answer == "n")
         {
-            Console.WriteLine($"Bye!");
+            Console.WriteLine($"Bye!"); //exit the program
             search = false;
             break;
         }
@@ -128,11 +161,4 @@ while (search)
         }
     }
 
-}   
-//for (int i = 0; i < choice.Length; i++) //loops thru each value in array
-//{
-//    if (choice[i] == val2Input)
-//    {
-//        Console.WriteLine(i); //only displays the index location (prints "1" and "4")
-//    }
-//}
+}
